@@ -1,4 +1,4 @@
-# Social crawler
+# Social Crawler
 This project utilizes Selenium, Helium, and HTTP GET requests to retrieve user information from Facebook, Instagram, TikTok, and Twitter. It is crucial to note that such actions are in violation of the terms of service of these platforms. Consequently, it is crucial to proceed with caution when deploying these scripts. 
 
 Additionally, the project incorporates a wrapper for the [Sherlock Project](https://github.com/sherlock-project). 
