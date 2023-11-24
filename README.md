@@ -2,16 +2,18 @@
 
 
 # Table of Contents
+- [Installation](#installation)
+- [Requirements](#requirements)
+  - [Facebook Crawler](#facebook-crawler)
+  - [Instagram Crawler](#instagram-crawler)
+  - [TikTok Crawler](#tiktok-crawler)
+  - [Twitter Crawler](#twitter-crawler)
+  - [Sherlock](#sherlock)
 
-1. [Installation](#installation)
-2. [Requirements](#requirements)
-3. [Facebook Crawler](#facebook-crawler)
-4. [Instagram Crawler](#instagram-crawler)
-5. [TikTok Crawler](#tiktok-crawler)
-6. [Twitter Crawler](#twitter-crawler)
 
 
-## installation 
+
+## Installation 
 
 ```bash
 # clone the repo
@@ -144,6 +146,20 @@ data = {
 }
 ```
 
+## Sherlock
+This is a wrapper for the [Sherlock Project](https://github.com/sherlock-project)
+
+Usage
+```python
+  # Install the required dependencies
+
+```
+```bash
+  # run the tracker.py script
+  python3 tracker.py
+```
+Input:"username" ---> returns all social media accounts assocaited to that username
+- [List of supported sites](https://github.com/sherlock-project/sherlock/blob/master/sites.md)
 
 
 
