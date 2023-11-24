@@ -1,0 +1,37 @@
+import requests
+import re
+import json
+
+def scrape_instagram_user(url):
+    response = requests.get(url)
+
+
+    name_match = re.search(r'property="og:title" content="(.+?) \(&#064', response.text)
+    count_match = re.search(r'content="(\d+\.?\d*K?) Followers, (\d+\.?\d*K?) Following, (\d+\.?\d*K?) Posts', response.text)
+
+    if name_match:
+        name = name_match.group(1)
+    else:
+        name = ""
+
+    if count_match:
+        followers = count_match.group(1) 
+        following = count_match.group(2)
+        posts = count_match.group(3)
+    else:
+        followers = ""
+        following = ""
+        posts = ""
+
+    data = {
+        "Name": name,
+        "Followers": followers,
+        "Following": following,
+        "Posts": posts
+    }
+
+    return json.dumps(data, indent=4)
+
+
+
+
