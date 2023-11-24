@@ -1,5 +1,7 @@
-# social-crawler
+# Social crawler
+This project utilizes Selenium, Helium, and HTTP GET requests to retrieve user information from Facebook, Instagram, TikTok, and Twitter. It is crucial to note that such actions are in violation of the terms of service of these platforms. Consequently, it is crucial to proceed with caution when deploying these scripts. 
 
+Additionally, the project incorporates a wrapper for the [Sherlock Project](https://github.com/sherlock-project). 
 
 # Table of Contents
 - [Installation](#installation)
@@ -29,8 +31,8 @@ $ cd social-crawler
     - WinX64
     - MacX64
     - LinuxX64
-  * if you are using an unsupported OS, download the appropraite chromium drivers from https://chromedriver.chromium.org and set the driver path
-```pyhton
+  * if you are using an unsupported OS, download the appropriate chromium drivers from https://chromedriver.chromium.org and set the driver path
+```python
   driver_path = "path-to-drivers/chromedriver-<your-operating-system>/chromedriver"
 ```
 
@@ -80,7 +82,7 @@ Usage
 ---
 Return Type
 The function returns a JSON object with the following structure:
-```pyhton
+```python
 data = {
   "Name": "user_name",
   "Followers": followers_count,
@@ -106,7 +108,7 @@ Usage
 ---
 Return Type
 The function returns a JSON object with the following structure:
-```pyhton
+```python
 data = {
   "Name": "name",
   "Username": "user_name",
@@ -130,12 +132,13 @@ Import
 ```
 Usage
 ```python
+  # !!!Set username and password!!!
   data = scrape_twitter_profile(url)
 ```
 ---
 Return Type
 The function returns a JSON object with the following structure:
-```pyhton
+```python
 data = {
   "Name": "name",
   "Bio": "user_bio",
@@ -158,8 +161,11 @@ Usage
   # run the tracker.py script
   python3 tracker.py
 ```
-Input:"username" ---> returns all social media accounts assocaited to that username
+Input:"username" ---> returns all social media accounts associated to that username
 - [List of supported sites](https://github.com/sherlock-project/sherlock/blob/master/sites.md)
+
+
+
 
 
 
