@@ -28,9 +28,9 @@ $ cd social-crawler
 
   - Project requires Google Chrome to be installed. (You can change to your perfered OS, please read [WebDriver Documentation](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiK9Mr24duCAxWZCjQIHS3JDhgQFnoECBMQAQ&url=https%3A%2F%2Fwww.selenium.dev%2Fdocumentation%2Fwebdriver%2F&usg=AOvVaw1pVic_aa2kpShm2UAQOKH0&opi=89978449))
   - Supported Operating Systems:
-    - WinX64
-    - MacX64
-    - LinuxX64
+    - win64
+    - macx64
+    - linuxx64
   * if you are using an unsupported OS, download the appropriate chromium drivers from https://chromedriver.chromium.org and set the driver path
 ```python
   driver_path = "path-to-drivers/chromedriver-<your-operating-system>/chromedriver"
