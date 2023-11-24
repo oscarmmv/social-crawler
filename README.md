@@ -1,6 +1,17 @@
 # social-crawler
 
-## Installation 
+
+# Table of Contents
+
+1. [Installation](#installation)
+2. [Requirements](#requirements)
+3. [Facebook Crawler](#facebook-crawler)
+4. [Instagram Crawler](#instagram-crawler)
+5. [TikTok Crawler](#tiktok-crawler)
+6. [Twitter Crawler](#twitter-crawler)
+
+
+## installation 
 
 ```bash
 # clone the repo
@@ -9,7 +20,7 @@ $ git clone https://github.com/oscarmmv/social-crawler.git
 # change the working directory to social crawler
 $ cd social-crawler
 ```
-## Requirement
+## Requirements
 
   - Project requires Google Chrome to be installed. (You can change to your perfered OS, please read [WebDriver Documentation](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiK9Mr24duCAxWZCjQIHS3JDhgQFnoECBMQAQ&url=https%3A%2F%2Fwww.selenium.dev%2Fdocumentation%2Fwebdriver%2F&usg=AOvVaw1pVic_aa2kpShm2UAQOKH0&opi=89978449))
   - Supported Operating Systems:
