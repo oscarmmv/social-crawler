@@ -8,10 +8,8 @@ import json
 
 class TikTokSpider:
     def scrape_tiktok_profile(self, url):
-        # Determine the operating system
+   
         system = platform.system()
-
-        # Set the driver path based on the operating system
         if system == 'Linux':
             driver_path = 'chromium_drivers/chromedriver-linux-x64/chromedriver'
         elif system == 'Darwin':
@@ -22,17 +20,16 @@ class TikTokSpider:
             raise Exception('Unsupported operating system')
         
         chrome_options = Options()
-        chrome_options.add_argument("--incognito")  # Start browser in incognito mode
-        chrome_options.add_argument("--headless")  # Run browser in headless mode
+        chrome_options.add_argument("--incognito")  
+        chrome_options.add_argument("--headless") 
         
         driver = webdriver.Chrome(executable_path=driver_path, options=chrome_options)
         set_driver(driver)
         go_to(url)
         
-        # Bypass security check if the #Path element exists
         if S('#Path').exists():
             click(S('#Path'))
-            time.sleep(0.1)  # Wait for a moment after clicking the button
+            time.sleep(0.1)  
         
         name_elements = find_all(S('.css-1xo9k5n-H1ShareTitle'))
         username_elements = find_all(S('.css-10pb43i-H2ShareSubTitle'))

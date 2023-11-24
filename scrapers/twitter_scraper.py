@@ -20,7 +20,6 @@ def scrape_twitter_profile(url):
     
     options = Options()
     options.add_argument('--headless')  
-    
     service = Service(driver_path)
     driver = webdriver.Chrome(service=service, options=options)
 

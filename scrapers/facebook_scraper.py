@@ -17,7 +17,7 @@ def scrape_facebook(url):
         raise Exception('Unsupported operating system')
     
     chrome_options = Options()
-    chrome_options.add_argument('--headless')  # Run in headless mode
+    chrome_options.add_argument('--headless')  
 
     service = Service(driver_path)
     driver = webdriver.Chrome(service=service, options=chrome_options)
