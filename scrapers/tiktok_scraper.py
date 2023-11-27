@@ -33,8 +33,8 @@ class TikTokSpider:
         
         name_elements = find_all(S('.css-1xo9k5n-H1ShareTitle'))
         username_elements = find_all(S('.css-10pb43i-H2ShareSubTitle'))
-        follower_elements = find_all(S('div.css-mgke3u-DivNumber:nth-child(1) > strong:nth-child(1)'))
-        following_elements = find_all(S('div.css-mgke3u-DivNumber:nth-child(2) > strong:nth-child(1)'))
+        follower_elements = find_all(S('div.css-mgke3u-DivNumber:nth-child(2) > strong:nth-child(1)'))
+        following_elements = find_all(S('div.css-mgke3u-DivNumber:nth-child(1) > strong:nth-child(1)'))
         like_elements = find_all(S('.css-ntsum2-DivNumber > strong:nth-child(1)'))
         bio_elements = find_all(S('.css-4ac4gk-H2ShareDesc'))
         link_elements = find_all(S('.css-847r2g-SpanLink'))
